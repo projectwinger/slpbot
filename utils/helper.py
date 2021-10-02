@@ -9,7 +9,7 @@ with open("entity/abis/slp_abi.json") as f:
 
 def check_slp_balance():
     slp_contract = w3.eth.contract(
-        address=Web3.toChecksumAddress(WETH_CONTRACT),
+        address=Web3.toChecksumAddress(SLP_CONTRACT),
         abi=min_abi
     )
     balance = slp_contract.functions.balanceOf(
@@ -20,7 +20,7 @@ def check_slp_balance():
 
 def check_balance():
     slp_contract = w3.eth.contract(
-        address=Web3.toChecksumAddress(SLP_CONTRACT),
+        address=Web3.toChecksumAddress(WETH_CONTRACT),
         abi=min_abi
     )
     balance = slp_contract.functions.balanceOf(
