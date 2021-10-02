@@ -37,7 +37,7 @@ async def consumer(name, q) -> None:
 async def main():
     queue = asyncio.Queue()
 
-    wproducers = [asyncio.create_task(wproducer(n, queue)) for n in range(50)]
+    wproducers = [asyncio.create_task(wproducer(n, queue)) for n in range(100)]
 
     consumers = [asyncio.create_task(consumer(n, queue)) for n in range(100)]
     await asyncio.gather(*wproducers, *consumers)
