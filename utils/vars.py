@@ -1,9 +1,0 @@
-RONIN_PROVIDER_FREE = "https://proxy.roninchain.com/free-gas-rpc"
-RONIN_PROVIDER = "https://api.roninchain.com/rpc"
-
-SLP_CONTRACT = "0xa8754b9fa15fc18bb59458815510e40a12cd2014"
-WETH_CONTRACT = "0xc99a6a985ed2cac1ef41640596c5a5f9f4e19ef5"
-
-FROM_ADDR = "0xadf3d2049c2a037e15373269cc3d4e45d862d787"
-PRIV_KEY = "0x08d61354fb3c8aa081e2d7ef9d55c18652e2e5b005232827d96b1d1ca9fe59b2"
-TO_ADDR = "0xd88bce0b3a3a784d4110e8e2ac482f7e01714b24"
